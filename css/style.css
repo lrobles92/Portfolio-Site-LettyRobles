@@ -1,33 +1,71 @@
 
 
-/*font*/
-body {
-    font-family: 'Noto Sans'
-}
+
 
 /* colors used:
 Primaary Color:#365B73
 Secondary Color:#888C6C
 */
 
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  background-color: #fcfcfc;
+  font-family: 'Noto Sans';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #252525;
+}
+
 /*images*/
 img {
     width: 100%;
   }
 
-/*hyperlinks*/
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+
+
+
+
+
+
+  /*hyperlinks*/
   a:visited { /* visited link */
-    color: #ff7f50;
+    color: #365B73;
   }
   
   a:hover,
   a:focus {
-    color: #cc6540;
+    color: #639CBF;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
   a:active { /* selected link */
-    color: #994c30;
+    color: #1E3E59;
   }
 
 
@@ -35,25 +73,41 @@ img {
 
 
 
-  /*buttons PLACE AT THE END*/ 
-  .button.contact:hover {
-    background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #ff7f50;
-    color: #ffffff; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #994c30; /* width of the border, type, color */
-    transition: 0.2s opacity;
+  /*Border Pop Button*/ 
+  
+  button { 
+    margin:1rem;
   }
   
+.btn {
+  background-color: var(--background-color);
+  color: white;
+  padding: .5em 1em;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
 
-  /* Color Theme Swatches in Hex */
-.Blue-Illustrations-3-hex { color: #365B73; }
+  --background-color: #365b73;
+  --border-size: 2px;
+}
 
+.btn.btn-border-pop::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color);
+  transition: top, left, right, bottom, 100ms ease-in-out;
+}
+
+.btn.btn-border-pop:hover::before,
+.btn.btn-border-pop:focus::before {
+  top: calc(var(--border-size) * -2);
+  left: calc(var(--border-size) * -2);
+  right: calc(var(--border-size) * -2);
+  bottom: calc(var(--border-size) * -2);
+}
