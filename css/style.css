@@ -73,7 +73,7 @@ img {
 
 
 
-  /*Border Pop Button*/ 
+  /*Border Pop Button-PRIMARY*/ 
   
   button { 
     margin:1rem;
@@ -110,4 +110,23 @@ img {
   left: calc(var(--border-size) * -2);
   right: calc(var(--border-size) * -2);
   bottom: calc(var(--border-size) * -2);
+}
+
+/* SECONDARY BUTTON */
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #888C6C;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: .5em 1em;
+  border-radius: 3px;
+  border-bottom: none; /* width of the border, type, color */
+  transition: 0.2s opacity;
+
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
 }
