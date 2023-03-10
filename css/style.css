@@ -18,6 +18,11 @@ header {
   text-align: center;
   border-bottom: 3px solid #4a4a4a;
 }
+
+a{ 
+  text-decoration: none;
+}
+
 .logo {
   max-width: 250px;
   text-align: center;
@@ -133,7 +138,7 @@ img {
 
   /*Border Pop Button-PRIMARY*/ 
   
-  
+ 
   .btn:visited {
     display: inline-block;
     color: white;
@@ -148,9 +153,15 @@ img {
   position: relative;
   cursor: pointer;
   margin: 1rem;
-
+  text-decoration: none;
+  
+  
   --background-color: #365b73;
   --border-size: 2px;
+}
+
+.btn.btn-border-pop:hover {
+  text-decoration: none;
 }
 
 .btn.btn-border-pop::before {
@@ -171,6 +182,7 @@ img {
   left: calc(var(--border-size) * -2);
   right: calc(var(--border-size) * -2);
   bottom: calc(var(--border-size) * -2);
+ 
 }
 
 /* SECONDARY BUTTON */
