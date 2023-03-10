@@ -11,6 +11,39 @@ Secondary Color:#888C6C
   box-sizing: border-box;
 }
 
+header {
+  background-color: #888c6c;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  border-bottom: 3px solid #4a4a4a;
+}
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+
+/* Navigation */
+
+nav > ul > li > a:visited {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 100;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+
 body { 
   background-color: #fcfcfc;
   font-family: 'Noto Sans';
@@ -19,6 +52,35 @@ body {
   line-height: 1.6;
   color: #252525;
 }
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  }
+
+
+
+
+
+/* Layout Styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+.center {
+  text-align: center;
+}
+
+
 
 /*images*/
 img {
@@ -69,17 +131,15 @@ img {
   }
 
 
-
-
-
-
   /*Border Pop Button-PRIMARY*/ 
   
-  button { 
-    margin:1rem;
-  }
   
-.btn {
+  .btn:visited {
+    display: inline-block;
+    color: white;
+  }
+
+  .btn {
   background-color: var(--background-color);
   color: white;
   padding: .5em 1em;
@@ -87,6 +147,7 @@ img {
   outline: none;
   position: relative;
   cursor: pointer;
+  margin: 1rem;
 
   --background-color: #365b73;
   --border-size: 2px;
