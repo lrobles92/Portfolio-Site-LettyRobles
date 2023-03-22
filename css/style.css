@@ -101,6 +101,25 @@ body {
  
 }
 
+/* Project: 1 Pet Patrol */
+.shortcut a {
+  text-decoration: none;
+  position: relative;
+}
+
+.shortcut a:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+}
+
+
+
+
 /* Layout Styling */
 .container {
   padding: 0 15px;
@@ -164,14 +183,13 @@ body {
   text-align: center;
 }
 
-/* ===============SHORTCUTS NAV Working in progress================== */
-
-.shortcut nav  {
-float: left;
-margin-left: 80px;
-
+#about-photo {
+  max-width: 500px;
 }
 
+.shortcut a {
+text-align: left;
+}
 
 
 /*images*/
@@ -329,6 +347,12 @@ img {
   animation: 4s color-change infinite alternate linear;
 }
 
+.berlin-animation {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -355,11 +379,6 @@ Medium devices (640px and larger)
   }
   #about-page h3 { margin-top: 0;}
 
-  .shortcut nav  {
-    float: left;
-    margin-left: 80px;
-    
-    }
 }
 
 /* ==============================
@@ -368,6 +387,8 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   
   .col-7 {width: 58.33%;}
+  
+  .col-5 {width: 41.66%;}
   
   header {
     text-align: unset;
@@ -391,25 +412,7 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   
-  .berlin-animation {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    float: left;
-  }
-  
-  .shortcut nav  {
-    float: left;
-    margin-left: 80px;
-    
-    }
 }
 
 
