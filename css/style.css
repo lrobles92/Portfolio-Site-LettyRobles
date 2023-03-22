@@ -17,7 +17,7 @@ header {
   background-color: #888c6c;
   padding: 10px;
   margin: 0;
-  text-align: center;
+  text-align: unset;
   position: relative;
 }
 
@@ -48,7 +48,8 @@ nav > ul > li > a:visited {
   list-style-type: none;
   padding: 0;
   display: inline-block;
-  width: 100;
+  width: 100%;
+
 }
 
 nav > ul > li {
@@ -68,13 +69,13 @@ nav > ul > li > a {
 body { 
   background-color: #fcfcfc;
   font-family: 'Noto Sans';
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
   color: #252525;
 }
 
-/* Footer */
+/* Footer*/
 
 #contact {
   text-align: center;
@@ -88,6 +89,17 @@ body {
   color: #fcfcfc
 }
 
+.social svg {
+ justify-content: center;
+ margin: 8px;
+ display: inline-block;
+ margin-top: 20px;
+}
+
+.social svg :hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+ 
+}
 
 /* Layout Styling */
 .container {
@@ -98,6 +110,12 @@ body {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #hero h1, h4 {
   text-align: center;/* Centers text */
   color: #fcfcfc;
@@ -106,20 +124,61 @@ body {
 #hero {
   background-color: #365B73;
   padding: 20px 0;
-  display: inline-block;
+  display: block;
   width: 100%;
+  text-align: center;
   }
 
+#hero span {
+  display: block;
+}
 
+#my-work h2 {
+  text-align: center;
+}
+
+#aboutme h2 {
+  text-align: center;
+}
+
+#aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.resume {
+  text-align: center;
+}
 
 .center {
   text-align: center;
+} 
+
+#projectpage h1, h2 {
+  text-align: center;
 }
+
+.container h1 {
+  text-align: center;
+}
+
+/* ===============SHORTCUTS NAV Working in progress================== */
+
+.shortcut nav  {
+float: left;
+margin-left: 80px;
+
+}
+
 
 
 /*images*/
 img {
     width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 
   h1, h2, h3, h4 {
@@ -233,3 +292,136 @@ img {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
+.button:hover {
+  opacity: 0.8;
+}
+
+/* CSS-Animations */
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  #about-page h3 { margin-top: 0;}
+
+  .shortcut nav  {
+    float: left;
+    margin-left: 80px;
+    
+    }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  
+  .col-7 {width: 58.33%;}
+  
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  #about-page h3 { margin-top: 0;}
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .berlin-animation {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    float: left;
+  }
+  
+  .shortcut nav  {
+    float: left;
+    margin-left: 80px;
+    
+    }
+}
+
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+
