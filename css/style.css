@@ -15,9 +15,9 @@ Secondary Color:#888C6C
 
 header {
   background-color: #888c6c;
-  padding: 10px;
+  padding: 10px 0 4px;
   margin: 0;
-  text-align: unset;
+  
   position: relative;
 }
 
@@ -32,8 +32,7 @@ a{
 }
 
 .logo {
-  max-width: 300px;
-  max-height: 200px;
+  max-width: 150px;
   text-align: center;
 }
 
@@ -42,6 +41,7 @@ a{
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav > ul > li > a:visited {
@@ -52,8 +52,26 @@ nav > ul > li > a:visited {
 
 }
 
-nav > ul > li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2.6485px;
+  font-size: 25px;
+  padding-right: 0;
+  color: white;
+
+}
+
+.navtoggle.responsive li  {
+  display: block;
 }
 
 nav > ul > li > a {
@@ -62,9 +80,6 @@ nav > ul > li > a {
   font-weight: 700;
   color: #4a4a4a;
 }
-
-
-
 
 body { 
   background-color: #fcfcfc;
@@ -75,14 +90,56 @@ body {
   color: #252525;
 }
 
+nav ul li a.work i {
+ padding-right: 5px;
+}
+
+nav ul li a.work:hover {
+  color: white;
+  text-decoration: none;
+} 
+
+nav ul li a.work:hover i {
+  color: white; 
+
+}
+
+nav ul li a.about i {
+  padding-right: 5px;
+ }
+
+ nav ul li a.about:hover {
+  color: white;
+  text-decoration: none;
+} 
+
+nav ul li a.about:hover i {
+  color: white; 
+
+}
+ 
+ nav ul li a.contact i {
+  padding-right: 5px;
+ }
+
+ nav ul li a.contact:hover {
+  color: white;
+  text-decoration: none;
+} 
+
+nav ul li a.contact:hover i {
+  color: white; 
+
+}
+ 
+
 /* Footer*/
 
 #contact {
   text-align: center;
   background-color: #252525;
   padding: 20px 0;
-  display: inline-block;
-  width: 100%;
+ 
 }
 
 #contact {
@@ -121,6 +178,7 @@ body {
 
 
 /* Layout Styling */
+
 .container {
   padding: 0 15px;
 }
@@ -379,6 +437,22 @@ Medium devices (640px and larger)
   }
   #about-page h3 { margin-top: 0;}
 
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  .logo {
+    max-width: 150px;
+  }
+
 }
 
 /* ==============================
@@ -412,6 +486,16 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  .navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+
   
 }
 
