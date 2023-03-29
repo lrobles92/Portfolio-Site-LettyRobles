@@ -373,6 +373,10 @@ img {
   opacity: 0.8;
 }
 
+.button {
+  margin-right: 10px;
+}
+
 /* CSS-Animations */
 @keyframes color-change {
   from {fill: #edc655;}
