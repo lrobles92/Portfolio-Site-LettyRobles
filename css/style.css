@@ -450,7 +450,7 @@ Medium devices (640px and larger)
   }
 
   nav > ul {
-    margin: 1em 0;
+    margin: none;
   }
 
   .logo {
@@ -491,16 +491,10 @@ Large devices (1024px or larger)
     margin-right: auto;
   }
 
-  .navtoggle li:not(:last-child) {
-  display: none;
-}
-
 .logo {
   max-width: 150px;
 }
 
-
-  
 }
 
 
