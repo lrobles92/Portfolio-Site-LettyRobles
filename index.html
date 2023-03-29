@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/cb36966904.js" crossorigin="anonymous"></script>
      <title>Letty's Portfolio</title>
   </head>
 
@@ -20,6 +21,7 @@
     <header>
       <div id="header">
       <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
         <img
           src="img/l_r-logo.jpeg"
           alt="Letty Robles Logo"
@@ -28,16 +30,20 @@
         <nav>
            <ul>
           <li>
-            <a href="index.html">Work</a>
+            <a href="index.html" class="work"><i class="fa-solid fa-briefcase"></i>Work</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="about.html" class="about"><i class="fa-solid fa-user"></i>About</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" class="contact"><i class="fa-solid fa-phone"></i>Contact</a>
           </li>
+            <li>
+                <a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a>
+            </li>          
           </ul>
         </nav>
+      </div>
       </div>
     </div>
     </header>
@@ -769,6 +775,7 @@
         <p>copyright Letty Robles 2023</p>
       </div>
     </footer>
+    <script src="js/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
