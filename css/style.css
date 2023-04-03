@@ -14,7 +14,7 @@ Secondary Color:#888C6C
 /* Header */
 
 header {
-  background-color: #888c6c;
+  background-color: #424769;
   padding: 10px 0 4px;
   margin: 0;
   
@@ -32,7 +32,7 @@ a{
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 200px;
   text-align: center;
 }
 
@@ -95,12 +95,12 @@ nav ul li a.work i {
 }
 
 nav ul li a.work:hover {
-  color: white;
+  color: #fab27a;
   text-decoration: none;
 } 
 
 nav ul li a.work:hover i {
-  color: white; 
+  color: #fab27a; 
 
 }
 
@@ -109,12 +109,12 @@ nav ul li a.about i {
  }
 
  nav ul li a.about:hover {
-  color: white;
+  color: #fab27a;
   text-decoration: none;
 } 
 
 nav ul li a.about:hover i {
-  color: white; 
+  color: #fab27a; 
 
 }
  
@@ -123,12 +123,12 @@ nav ul li a.about:hover i {
  }
 
  nav ul li a.contact:hover {
-  color: white;
+  color: #fab27a;
   text-decoration: none;
 } 
 
 nav ul li a.contact:hover i {
-  color: white; 
+  color: #fab27a; 
 
 }
  
@@ -137,13 +137,13 @@ nav ul li a.contact:hover i {
 
 #contact {
   text-align: center;
-  background-color: #252525;
+  background-color: #2d3250;
   padding: 20px 0;
  
 }
 
 #contact {
-  color: #fcfcfc
+  color: #fab27a
 }
 
 .social svg {
@@ -195,11 +195,11 @@ nav ul li a.contact:hover i {
 
 #hero h1, h4 {
   text-align: center;/* Centers text */
-  color: #fcfcfc;
+  color: #fab27a
 }
 
 #hero {
-  background-color: #365B73;
+  background-color: #2d3250;
   padding: 20px 0;
   display: block;
   width: 100%;
@@ -249,6 +249,15 @@ nav ul li a.contact:hover i {
 text-align: left;
 }
 
+#testerfb h4 {
+  color: #252525
+}
+
+#competitor h4 {
+  color: #252525;
+  font-weight: bold;
+}
+
 
 /*images*/
 img {
@@ -287,7 +296,7 @@ img {
 
   /*hyperlinks*/
   a:visited { /* visited link */
-    color: #365B73;
+    color: white;
   }
   
   a:hover,
@@ -306,7 +315,7 @@ img {
  
   .btn:visited {
     display: inline-block;
-    color: white;
+  color: white;
   }
 
   .btn {
@@ -321,7 +330,7 @@ img {
   text-decoration: none;
   
   
-  --background-color: #365b73;
+  --background-color: #094688;
   --border-size: 2px;
 }
 
@@ -354,7 +363,7 @@ img {
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #888C6C;
+  background-color: #676f9d;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: .5em 1em;
@@ -454,7 +463,7 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 150px;
+    max-width: 200px;
   }
 
 }
@@ -492,7 +501,7 @@ Large devices (1024px or larger)
   }
 
 .logo {
-  max-width: 150px;
+  max-width: 200px;
 }
 
 }
