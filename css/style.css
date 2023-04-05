@@ -26,7 +26,6 @@ header {
    
     }
 
-
 a{ 
   text-decoration: none;
 }
@@ -78,7 +77,7 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: white;
 }
 
 body { 
@@ -173,9 +172,6 @@ nav ul li a.contact:hover i {
   left: 0;
   background-color: #000;
 }
-
-
-
 
 /* Layout Styling */
 
@@ -289,11 +285,6 @@ img {
     font-weight: 400;
   }
 
-
-
-
-
-
   /*hyperlinks*/
   a:visited { /* visited link */
     color: white;
@@ -301,12 +292,16 @@ img {
   
   a:hover,
   a:focus {
-    color: #639CBF;
+    color: white;
     text-decoration: underline; /* Underlining when hovering over a link */
   }
 
   a:active { /* selected link */
     color: #1E3E59;
+  }
+
+  .shortcut a {
+    color: #094688;
   }
 
 
@@ -432,13 +427,13 @@ Medium devices (640px and larger)
   
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 16px 0 16px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 16px;
   }
   .col-md-6 {
     width: 50%;
@@ -459,7 +454,7 @@ Medium devices (640px and larger)
   }
 
   nav > ul {
-    margin: none;
+    margin: 0;
   }
 
   .logo {
@@ -479,13 +474,13 @@ Large devices (1024px or larger)
   
   header {
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 16px 0 16px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 16px;
   }
 
   [class*="col-"] {
