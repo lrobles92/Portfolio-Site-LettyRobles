@@ -356,7 +356,7 @@ img {
 
 /* SECONDARY BUTTON */
 
-.button {
+.ebutton {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #676f9d;
   color: #ffffff; /* needed to override the default link color */
@@ -368,18 +368,19 @@ img {
 
 }
 
-.button:hover {
+.ebutton:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
-.button:hover {
+.ebutton:hover {
   opacity: 0.8;
 }
 
-.button {
+.ebutton {
   margin-right: 10px;
 }
+
 
 /* CSS-Animations */
 @keyframes color-change {
