@@ -17,7 +17,7 @@ Secondary Color:#676f9d
 /* Header */
 
 header {
-  background-color: #424769;
+  background-color: #191919;
   padding: 10px 0 4px;
   margin: 0;
   position: relative;
@@ -80,25 +80,26 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color: white;
+  font-family: 'Lato', sans-serif;
 }
 
 #hero h1 {
-  font-family: 'Kanit', sans-serif;
-  ;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .container h1 {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 
 }
 
 body { 
-  background-color: #fcfcfc;
+  background-color: #292929;
   font-family: 'Noto Sans';
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
-  color: #252525;
+  color: rgb(243, 242, 242);
+  font-style: normal;
 }
 
 nav ul li a.work i {
@@ -106,12 +107,12 @@ nav ul li a.work i {
 }
 
 nav ul li a.work:hover {
-  color: #fab27a;
+  color: #BFBFBF;
   text-decoration: none;
 } 
 
 nav ul li a.work:hover i {
-  color: #fab27a; 
+  color: #BFBFBF; 
 
 }
 
@@ -120,12 +121,12 @@ nav ul li a.about i {
  }
 
  nav ul li a.about:hover {
-  color: #fab27a;
+  color: #BFBFBF;
   text-decoration: none;
 } 
 
 nav ul li a.about:hover i {
-  color: #fab27a; 
+  color: #BFBFBF; 
 
 }
  
@@ -134,12 +135,12 @@ nav ul li a.about:hover i {
  }
 
  nav ul li a.contact:hover {
-  color: #fab27a;
+  color: #BFBFBF;
   text-decoration: none;
 } 
 
 nav ul li a.contact:hover i {
-  color: #fab27a; 
+  color: #BFBFBF; 
 
 }
  
@@ -148,13 +149,13 @@ nav ul li a.contact:hover i {
 
 #contact {
   text-align: center;
-  background-color: #2d3250;
+  background-color: #191919;
   padding: 20px 0;
  
 }
 
 #contact {
-  color: #fab27a
+  color: rgb(243, 242, 242);
 }
 
 .social svg {
@@ -203,12 +204,13 @@ nav ul li a.contact:hover i {
 
 #hero h1, h4 {
   text-align: center;/* Centers text */
-  color: #fab27a
+  color: rgb(243, 242, 242);
+  font-weight: bold;
 }
 
 #hero {
-  background-color: #2d3250;
-  padding: 20px 0;
+  background-color: #313131;
+  padding: 250px 0;
   display: block;
   width: 100%;
   text-align: center;
@@ -250,7 +252,22 @@ nav ul li a.contact:hover i {
 }
 
 #about-photo {
-  max-width: 500px;
+  max-width: 400px;
+
+}
+
+#mepic2 img {
+  max-width: 400px;
+  height: auto;
+  float: left;
+  margin-top: 150px;
+}
+
+#workdesk img {
+  max-width: 400px;
+  height: auto;
+  float: right;
+  
 }
 
 .shortcut a {
@@ -258,11 +275,11 @@ text-align: left;
 }
 
 #testerfb h4 {
-  color: #252525
+  color:  rgb(243, 242, 242);
 }
 
 #competitor h4 {
-  color: #252525;
+  color: rgb(243, 242, 242);
   font-weight: bold;
 }
 
@@ -296,93 +313,37 @@ img {
     font-size: 1.35em;
     font-weight: 400;
   }
-
-  /*hyperlinks*/
-  a:visited { /* visited link */
-    color: white;
-  }
   
-  a:hover,
-  a:focus {
-    color: white;
-    text-decoration: underline; /* Underlining when hovering over a link */
+  .container picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
-  a:active { /* selected link */
-    color: #1E3E59;
-  }
-
-  .shortcut a {
-    color: #094688;
-  }
-
-
-  /*Border Pop Button-PRIMARY*/ 
-  
- 
-  .btn:visited {
-    display: inline-block;
-  color: white;
-  }
-
-  .btn {
-  background-color: var(--background-color);
-  color: white;
-  padding: .5em 1em;
-  border: none;
-  outline: none;
-  position: relative;
-  cursor: pointer;
-  margin: 1rem;
-  text-decoration: none;
-  
-  
-  --background-color: #094688;
-  --border-size: 2px;
-}
-
-.btn.btn-border-pop:hover {
-  text-decoration: none;
-}
-
-.btn.btn-border-pop::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  border: var(--border-size) solid var(--background-color);
-  transition: top, left, right, bottom, 100ms ease-in-out;
-}
-
-.btn.btn-border-pop:hover::before,
-.btn.btn-border-pop:focus::before {
-  top: calc(var(--border-size) * -2);
-  left: calc(var(--border-size) * -2);
-  right: calc(var(--border-size) * -2);
-  bottom: calc(var(--border-size) * -2);
- 
-}
-
-/* SECONDARY E-mail BUTTON */
+/* PRIMARY BUTTON */
 
 .ebutton {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #676f9d;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #BFBFBF;
+  color: #292929; /* needed to override the default link color */
   font-weight: 400;
   padding: .5em 1em;
   border-radius: 3px;
   border-bottom: none; /* width of the border, type, color */
   transition: 0.2s opacity;
-
+  font-family: 'Lato', sans-serif;
 }
 
 .ebutton:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: white;
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 .ebutton:hover {
@@ -398,7 +359,7 @@ img {
   position: fixed;
   width: 50px;
   height: 50px;
-  background: #676f9d;
+  background: #BFBFBF;
   bottom: 40px;
   right: 50px;
   text-decoration: none;
@@ -518,7 +479,7 @@ Large devices (1024px or larger)
   #about-page h3 { margin-top: 0;}
 
   .container {
-    max-width: 1200px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
   }

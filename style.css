@@ -1,0 +1,55 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+
+
+/* colors used:
+Primaary Color:
+Secondary Color:
+*/
+
+/*images*/
+img {
+    width: 100%;
+  }
+
+/*hyperlinks*/
+  a:visited { /* visited link */
+    color: #ff7f50;
+  }
+  
+  a:hover,
+  a:focus {
+    color: #cc6540;
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+
+  a:active { /* selected link */
+    color: #994c30;
+  }
+
+
+
+
+
+
+  /*buttons PLACE AT THE END*/ 
+  .button.contact:hover {
+    background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #ff7f50;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #994c30; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+  
