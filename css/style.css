@@ -186,6 +186,19 @@ nav ul li a.contact:hover i {
   background-color: #000;
 }
 
+.shortcut a {
+  text-align: left;
+  }
+  
+  #testerfb h4 {
+    color:  rgb(243, 242, 242);
+  }
+  
+  #competitor h4 {
+    color: rgb(243, 242, 242);
+    font-weight: bold;
+  }
+
 /* Layout Styling */
 
 .container {
@@ -224,6 +237,70 @@ nav ul li a.contact:hover i {
   text-align: center;
 }
 
+.center {
+  text-align: center;
+} 
+
+#projectpage h1, h2 {
+  text-align: center;
+}
+
+.container h1 {
+  text-align: center;
+}
+/* About Page */
+#about-photo {
+  max-width: 400px;
+
+}
+
+.firstrow img {
+  max-width: 400px;
+  float: left;
+}
+
+
+.firstrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.textbox1 {
+  text-align: left;
+  padding: 40px;
+
+}
+
+.sec-row img {
+  max-width: 400px;
+  float: right;
+}
+
+.sec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.textbox2 {
+ padding: 40px;
+}
+
+.textbox3 {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.skill-row {
+  justify-content: center;
+  padding-top: 40px;
+}
+
+
+
 #aboutme h2 {
   text-align: center;
 }
@@ -238,51 +315,6 @@ nav ul li a.contact:hover i {
 .resume {
   text-align: center;
 }
-
-.center {
-  text-align: center;
-} 
-
-#projectpage h1, h2 {
-  text-align: center;
-}
-
-.container h1 {
-  text-align: center;
-}
-
-#about-photo {
-  max-width: 400px;
-
-}
-
-#mepic2 img {
-  max-width: 400px;
-  height: auto;
-  float: left;
-  margin-top: 150px;
-}
-
-#workdesk img {
-  max-width: 400px;
-  height: auto;
-  float: right;
-  
-}
-
-.shortcut a {
-text-align: left;
-}
-
-#testerfb h4 {
-  color:  rgb(243, 242, 242);
-}
-
-#competitor h4 {
-  color: rgb(243, 242, 242);
-  font-weight: bold;
-}
-
 
 /*images*/
 img {
@@ -450,7 +482,9 @@ Medium devices (640px and larger)
     max-width: 200px;
   }
 
+
 }
+
 
 /* ==============================
 Large devices (1024px or larger)
