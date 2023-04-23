@@ -95,7 +95,7 @@ nav > ul > li > a {
 body { 
   background-color: #292929;
   font-family: 'Noto Sans';
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.6;
   color: rgb(243, 242, 242);
@@ -316,6 +316,28 @@ nav ul li a.contact:hover i {
   text-align: center;
 }
 
+.aboutpic {
+  max-width: 400px;
+}
+
+.aboutpic2 {
+  max-width: 400px;
+
+}
+
+#deskpic {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#canyonpic {
+  padding-top: 60px;
+}
+
+.skills-tools {
+
+}
+
 /*images*/
 img {
     width: 100%;
@@ -482,8 +504,35 @@ Medium devices (640px and larger)
     max-width: 200px;
   }
 
+  .aboutpic {
+    max-width: 400px;
+  }
+  
+  .aboutpic2 {
+    max-width: 400px;
+  
+  }
+  
+ 
 
 }
+
+@media only screen and (max-width: 640px) {
+  #deskpic {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  #canyonpic {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+
+}
+
 
 
 /* ==============================
