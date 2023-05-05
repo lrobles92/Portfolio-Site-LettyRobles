@@ -334,6 +334,114 @@ nav ul li a.contact:hover i {
   padding-top: 60px;
 }
 
+/* Contact Page */
+
+.left {
+  padding: 2em;
+  background-color: rgb(68, 68, 68);
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 8px;
+  margin-right: 2rem;
+  margin-bottom: 20px;
+
+}
+
+.location-icon i {
+  background-color: #313131;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 25px;
+  margin-right: 10px;
+  padding-top: 8px;
+}
+
+form {
+  background: rgb(68, 68, 68);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+
+}
+
+form h3 {
+  color:  rgb(243, 242, 242);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+form input, textarea {
+  border-radius: 8px;
+  margin: 10px, 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+form button {
+  padding: 15px;
+  background:#BFBFBF;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+form button :hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+form button:hover,:focus {
+  color: rgb(17, 17, 17);
+}
+
+form button:hover {
+  opacity: 0.8;
+}
+
+.contactsection--wrapper {
+  display: flex;
+  gap: 5em;
+  position:relative;
+  justify-content:center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  gap: 7rem;
+  align-items: center;
+}
+
+.left{
+  max-width: 600px;
+  width: 100%;
+  margin-left: 120px;
+}
+
+.right {
+  max-width: 600px;
+  width: 100%;
+  margin-left: 140px;
+}
+
+.left a{
+  color: white;
+}
+
+.left a:hover {
+  opacity: 0.8;
+}
 /*images*/
 img {
     width: 100%;
@@ -393,7 +501,6 @@ img {
 a:hover,
 a:focus {
   color: white;
-  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 .ebutton:hover {
@@ -525,8 +632,27 @@ Medium devices (640px and larger)
     justify-content: center;
   }
 
-  
+}
 
+@media only screen and (max-width: 640px){
+  .contactsection--wrapper {
+    flex-direction: column;
+    
+  }
+
+  .left {
+    float: left;
+    display: flex;
+    margin-left: 10px;
+    max-width: 500px;
+  }
+
+  .right { 
+    float: left;
+    display: flex;
+    margin-left: 20PX;
+
+  }
 }
 
 
