@@ -4,12 +4,6 @@ html{
 
 
 
-/* colors used:
-Primaary Color:#fab27a
-Secondary Color:#676f9d
-*/
-
-
 * {
   box-sizing: border-box;
 }
@@ -20,7 +14,9 @@ header {
   background-color: #191919;
   padding: 10px 0 4px;
   margin: 0;
-  position: relative;
+  position: fixed;
+  width: 100%;
+
 }
 
 header {
@@ -77,14 +73,17 @@ nav > ul > li > a:visited {
 
 nav > ul > li > a {
   padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
   color: white;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+.angle-down-arrow {
+  cursor: pointer;
+  font-size: 40px;
 }
 
 #hero h1 {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container h1 {
@@ -145,32 +144,9 @@ nav ul li a.contact:hover i {
 }
  
 
-/* Footer*/
 
-#contact {
-  text-align: center;
-  background-color: #191919;
-  padding: 20px 0;
- 
-}
 
-#contact {
-  color: rgb(243, 242, 242);
-}
-
-.social svg {
- justify-content: center;
- margin: 8px;
- display: inline-block;
- margin-top: 20px;
-}
-
-.social svg :hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
- 
-}
-
-/* Project: 1 Pet Patrol */
+/* Project: 1 Pet Patrol
 .shortcut a {
   text-decoration: none;
   position: relative;
@@ -197,7 +173,7 @@ nav ul li a.contact:hover i {
   #competitor h4 {
     color: rgb(243, 242, 242);
     font-weight: bold;
-  }
+  } */
 
 /* Layout Styling */
 
@@ -227,10 +203,16 @@ nav ul li a.contact:hover i {
   display: block;
   width: 100%;
   text-align: center;
+ 
   }
 
 #hero span {
   display: block;
+}
+
+#hero p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
 }
 
 #my-work h2 {
@@ -248,58 +230,19 @@ nav ul li a.contact:hover i {
 .container h1 {
   text-align: center;
 }
+
 /* About Page */
 #about-photo {
   max-width: 400px;
-
-}
-
-.firstrow img {
-  max-width: 400px;
-  float: left;
+  margin-top: 100px;
 }
 
 
-.firstrow {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 90px;
-}
 
-.textbox1 {
-  text-align: left;
-  padding: 40px;
-
-}
-
-.sec-row img {
-  max-width: 400px;
-  float: right;
-}
-
-.sec-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 60px;
-}
-
-.textbox2 {
- padding: 40px;
-}
-
-.textbox3 {
-  text-align: center;
-  padding-top: 60px;
-}
-
-.skill-row {
+/* .skill-row {
   justify-content: center;
   padding-top: 40px;
-}
-
-
+} */
 
 #aboutme h2 {
   text-align: center;
@@ -325,20 +268,47 @@ nav ul li a.contact:hover i {
 
 }
 
-#deskpic {
-  display: flex;
-  justify-content: flex-end;
+#about {
+  padding: 100px 0;
+  display:block;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
-#canyonpic {
-  padding-top: 60px;
+
+#etsy-shop {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  height: 100%; 
 }
 
+.skills-list {
+  display: grid;
+  grid-gap: 25px;
+  padding: 16px;
+}
+
+.skills-list img {
+  width: 50%;
+  height: 50%;
+}
+
+.skills-header {
+  padding-top: 40px;
+}
+
+.third-section p {
+  text-align: center;
+  margin-top: 40px;
+}
 /* Contact Page */
 
 .left {
   padding: 2em;
-  background-color: rgb(68, 68, 68);
+  background-color: #444444;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -415,9 +385,9 @@ form button:hover {
 .contactsection--wrapper {
   display: flex;
   gap: 5em;
-  position:relative;
+  /* position:relative; */
   justify-content:center;
-  margin-top: 80px;
+  /* margin-top: 80px; */
   margin-bottom: 80px;
   gap: 7rem;
   align-items: center;
@@ -442,6 +412,40 @@ form button:hover {
 .left a:hover {
   opacity: 0.8;
 }
+
+#contact-hero {
+  display: block;
+  padding: 100px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Footer*/
+
+#contact {
+  text-align: center;
+  background-color: #191919;
+  padding: 20px 0;
+ 
+}
+
+#contact {
+  color: rgb(243, 242, 242);
+}
+
+.social svg {
+ justify-content: center;
+ margin: 8px;
+ display: inline-block;
+ margin-top: 20px;
+}
+
+.social svg :hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+ 
+}
+
 /*images*/
 img {
     width: 100%;
@@ -620,19 +624,73 @@ Medium devices (640px and larger)
 
 }
 
-@media only screen and (max-width: 640px) {
+/* @media only screen and (max-width: 640px) {
   #deskpic {
     display: flex;
     justify-content: center;
 
   }
 
-  #canyonpic {
+  .canyonpic {
     display: flex;
     justify-content: center;
   }
 
+  .container-first-row {
+    display: flex;
+  }
+
+} */
+
+/*--THIS SECTION IS FOR THE COLUMN SECTION--*/
+@media screen and (max-width: 640px) {
+  .section-container {
+    max-width: 100%;
+    margin: 50px auto 0;
+  }
+
+  .column-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-container .column {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-container img {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0 0 20px;
+  }
+
+  .desk-pic {
+    justify-content: center;
+    
+  }
+
+  .canyon-pic {
+    justify-content: center;
+    display: flex;
+    
+  }
 }
+
+
+
+
+
+
+
+/*--THIS IS THE END OF THE COLUMN SECTION--*/
+
 
 @media only screen and (max-width: 640px){
   .contactsection--wrapper {
@@ -653,8 +711,16 @@ Medium devices (640px and larger)
     margin-left: 20PX;
 
   }
+
 }
 
+@media screen and (max-width:640px) {
+  .skills-list{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    display: flex;
+  }
+}
 
 
 /* ==============================
@@ -694,6 +760,16 @@ Large devices (1024px or larger)
 }
 
 }
+
+@media screen and (min-width:1024px) {
+  .skills-list{
+    grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+    }
+  }
+
+
+
 
 
 /* ==============================
